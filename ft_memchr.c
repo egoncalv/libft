@@ -1,17 +1,29 @@
-#include <stddef.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/23 02:40:43 by egoncalv          #+#    #+#             */
+/*   Updated: 2021/10/23 02:41:20 by egoncalv         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    *ft_memchr(const void *s, int c, size_t n)
+#include <libft.h>
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while (i < n)
-    {
-        if (*(unsigned char *)(s + i) == (unsigned char)c)
-            return ((void *)s + i);
-        i++;
-    }
-    return (0);
+	i = 0;
+	while (i < n)
+	{
+		if (*(unsigned char *)(s + i) == (unsigned char)c)
+			return ((void *)s + i);
+		i++;
+	}
+	return (0);
 }
 /*
 #include <stdio.h>
