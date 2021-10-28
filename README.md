@@ -16,7 +16,7 @@ The functions contained in this library are:
 > Checks for an ascii character. True if the given character is present in the ascii table.
 ---
 * **ft_isprint** `int	ft_isprint(int c)`
-> Checks for a printable character (Characters that occupie printing space)
+> Checks for a printable character (Characters that occupy printing space)
 ---
 * **ft_strlen** `size_t ft_strlen(const char *s)`
 > Counts and returns the length of a given string.
@@ -31,7 +31,7 @@ The functions contained in this library are:
 > Copies n characters from memory area src to memory area dest.
 ---
 * **ft_memmove** `void	*ft_memmove(void *dst, const void *src, size_t len)`
-> Copies n characters from str2 to str1, but for overlapping memory blocks, memmove() is a safer approach than memcpy().
+> Copies len characters from src to dest, but for overlapping memory blocks, memmove() is a safer approach than memcpy().
 ---
 * **ft_strlcpy** `size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)`
 > Copies up to size - 1 characters from the NUL-terminated string src to dst, NUL-terminating the result. Returns the length of the string it tried to create.
@@ -43,7 +43,7 @@ The functions contained in this library are:
 > Converts a lowercase char to uppercase.
 ---
 * **ft_tolower** `int	ft_tolower(int c)`
-> Converts a uppercase char to lowercase.
+> Converts an uppercase char to lowercase.
 ---
 * **ft_strchr** `char	*ft_strchr(const char *s, int c)`
 > Searches for the first occurrence of the character c in the string pointed to by the argument str, returning a pointer to it or NULL if the character is not found.
@@ -52,25 +52,25 @@ The functions contained in this library are:
 > Searches for the last occurrence of the character c in the string pointed to by the argument str, returning a pointer to it or NULL if the character is not found.
 ---
 * **ft_strncmp** `int	ft_strncmp(const char *s1, const char *s2, size_t n)`
-> Compares at most the first n bytes of str1 and str2.
+> Compares at most the first n bytes of s1 and s2.
 > 
-> If Return value < 0 then it indicates str1 is less than str2.
+> If Return value < 0 then it indicates s1 is less than s2.
 > 
-> If Return value > 0 then it indicates str2 is less than str1.
+> If Return value > 0 then it indicates s2 is less than s1.
 > 
-> If Return value = 0 then it indicates str1 is equal to str2.
+> If Return value = 0 then it indicates s1 is equal to s2.
 ---
 * **ft_memchr** `void	*ft_memchr(const void *s, int c, size_t n)`
 > Searches for the first occurrence of the character c in the first n bytes of the string pointed to by the argument str. Returns a pointer to the matching byte or NULL if the character does not occur in the given memory area.
 ---
 * **ft_memcmp** `int	ft_memcmp(const void *s1, const void *s2, size_t n)`
-> Compares the first n bytes of memory area str1 and memory area str2.
+> Compares the first n bytes of memory area s1 and memory area s2.
 > 
->If Return value < 0 then it indicates str1 is less than str2.
+>If Return value < 0 then it indicates s1 is less than s2.
 >
->If Return value > 0 then it indicates str2 is less than str1.
+>If Return value > 0 then it indicates s2 is less than s1.
 >
->If Return value = 0 then it indicates str1 is equal to str2.
+>If Return value = 0 then it indicates s1 is equal to s2.
 ---
 * **ft_strnstr** `char	*ft_strnstr(const char *haystack, const char *needle, size_t len)`
 > Locates the first occurrence of string needle in the haystack string. Returns a pointer to it or NULL if neddle does not appear in haystack.
@@ -82,7 +82,7 @@ The functions contained in this library are:
 > Allocates memory for an array of num objects of size and initializes all bytes in the allocated storage to zero. If allocation succeeds, returns a pointer to the lowest (first) byte in the allocated memory block that is suitably aligned for any object type.
 ---
 * **ft_strdup** `char	*ft_strdup(const char *s1)`
->Allocates and returns a pointer to a new string which isa duplicate of the string s1.
+>Allocates and returns a pointer to a new string which is a duplicate of the string s1.
 ---
 * **ft_substr** `char *ft_substr(char const *s, unsigned int start,
 size_t len)`
