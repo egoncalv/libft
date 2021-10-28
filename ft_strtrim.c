@@ -6,22 +6,58 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:54:18 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/10/23 02:56:39 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/10/28 15:00:56 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+//#include <stdlib.h>
+//#include <stdio.h>
+/*
+int	ft_strlen(const char *s)
+{
+	int	i;
 
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
+*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*trimmed;
+	int		start;
+	int		end;
 	int		i;
-	int		j;
+	char	*ptr;
 
-	if (set == 0)
-		return (ft_strdup(s1));
-	if (!(trimmed == (char *)malloc(sizeof(char)
-				* ft_strlen(s1) - (ft_strlen(set) * 2) + 1)))
+	start = 0;
+	i = 0;
+	while (s1[start] && s1[start] == set[i] && i <= ft_strlen(set))
+	{
+		start++;
+		i++;
+	}
+	end = ft_strlen(s1);
+	while (s1[end] == set[i] && i <= ft_strlen(set))
+	{
+		end--;
+		i--;
+	}
+	ptr = malloc(sizeof(char) * end - start + 1);
+	if (!ptr)
 		return (0);
-	return (trimmed);
+	i = 0;
+	while (start <= end)
+		ptr[i++] = s1[start++];
+	return (ptr);
 }
+/*
+int main ()
+{
+	char	str[] = "abcdtesteabcd";
+	char	set[] = "abcd";
+
+	printf("%s", ft_strtrim(str, set));
+
+}*/
