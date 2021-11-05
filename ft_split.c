@@ -6,9 +6,10 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 15:22:31 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/05 17:19:00 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/05 17:39:18 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 //#include <stdlib.h>
 //#include <stdio.h>
 #include <libft.h>
@@ -76,13 +77,13 @@ char	**ft_split(char const *s, char c)
 		while (s[i] == c)
 			i++;
 		j = i;
-			while (s[i] != c && s[i])
-				i++;
-			if (i > j)
-			{
-				array[k] = ft_strndup(&s[j], i - j);
-				k++;
-			}
+		while (s[i] != c && s[i])
+			i++;
+		if (i > j)
+		{
+			array[k] = ft_strndup(&s[j], i - j);
+			k++;
+		}
 	}
 	array[k] = 0;
 	return (array);
