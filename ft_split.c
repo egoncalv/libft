@@ -9,9 +9,9 @@
 /*   Updated: 2021/11/05 17:19:00 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
-#include <stdio.h>
-//#include <libft.h>
+//#include <stdlib.h>
+//#include <stdio.h>
+#include <libft.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -87,7 +87,7 @@ char	**ft_split(char const *s, char c)
 	array[k] = 0;
 	return (array);
 }
-
+/*
 int	main ()
 {
 	char	str[] = "zcharzintzhelpzokzosszsdlzfhewoifz";
@@ -101,3 +101,4 @@ int	main ()
 	}
 	return (0);
 }
+*/
