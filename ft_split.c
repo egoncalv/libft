@@ -6,13 +6,29 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 15:22:31 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/03 21:00:08 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/05 17:19:00 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
+#include <stdio.h>
 //#include <libft.h>
 
-int	ft_wordcntr(char *str, char c)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	int	i;
+
+	if (!dst)
+		return (0);
+	i = 0;
+	while (i < n)
+	{
+		*(char *)(dst + i) = *(char *)(src + i);
+		i++;
+	}
+	return (dst);
+}
+
+int	ft_wordcntr(const char *str, char c)
 {
 	int	i;
 	int	cntr;
@@ -31,18 +47,16 @@ int	ft_wordcntr(char *str, char c)
 	return (cntr);
 }
 
-void	ft_strndup(const char *str, int n)
+char	*ft_strndup(const char *str, int n)
 {
 	char	*ptr;
-	int		i;
 
-	ptr = malloc(sizeof(char) * n + 1);
+	ptr = (char *)malloc(sizeof(char) * n + 1);
 	if (!ptr)
 		return (0);
-	i = 0;
-	ptr = ft_strlcpy(ptr, str, n);
-	str[n] = '\0';
-	return (str);
+	ptr = ft_memcpy(ptr, str, n);
+	ptr[n] = '\0';
+	return (ptr);
 }
 
 char	**ft_split(char const *s, char c)
@@ -52,12 +66,38 @@ char	**ft_split(char const *s, char c)
 	int		k;
 	char	**array;
 
-	array = (char **)malloc(sizeof(char) * ft_wordcntr(s, c) + 1);
+	array = (char **)malloc(sizeof(char *) * ft_wordcntr(s, c) + 1);
 	if (!array)
 		return (0);
-	
+	i = 0;
+	k = 0;
+	while (s[i])
+	{
+		while (s[i] == c)
+			i++;
+		j = i;
+			while (s[i] != c && s[i])
+				i++;
+			if (i > j)
+			{
+				array[k] = ft_strndup(&s[j], i - j);
+				k++;
+			}
+	}
+	array[k] = 0;
+	return (array);
 }
 
-int main ()
+int	main ()
 {
+	char	str[] = "zcharzintzhelpzokzosszsdlzfhewoifz";
+	char	**tab = ft_split(str, 'z');
+	int		i = 0;
+	
+	while (tab[i])
+	{
+		printf("%s\n",tab[i]);
+		i++;
+	}
+	return (0);
 }
