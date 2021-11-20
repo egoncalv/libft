@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include <libft.h>
-//#include <stdio.h>
-//#include <stdlib.h>
 
 int	ft_digits_cntr(int n)
 {
