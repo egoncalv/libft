@@ -27,13 +27,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		i++;
 	return (i);
 }
-/*
-#include <stdio.h>
-int main()
-{
-    char    str[] = "abc";
-    char    dst[] = "";
-
-    ft_strlcpy(dst, str, 3);
-    printf("%s\n", dst);
-}*/

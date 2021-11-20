@@ -22,11 +22,3 @@ char	*ft_strdup(const char *s1)
 	ft_memcpy(ptr, s1, ft_strlen(s1) + 1);
 	return (ptr);
 }
-/*
-#include <stdio.h>
-
-int main ()
-{
-    char    str[] = "testaeee";
-    printf("%s\n", ft_strdup(str));
-}*/

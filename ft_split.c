@@ -71,18 +71,3 @@ char	**ft_split(char const *s, char c)
 	array[k] = 0;
 	return (array);
 }
-/*
-int	main ()
-{
-	char	str[] = "zcharzintzhelpzokzosszsdlzfhewoifz";
-	char	**tab = ft_split(str, 'z');
-	int		i = 0;
-	
-	while (tab[i])
-	{
-		printf("%s\n",tab[i]);
-		i++;
-	}
-	return (0);
-}
-*/

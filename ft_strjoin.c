@@ -47,14 +47,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i] = 0;
 	return (ptr);
 }
-
-/*
-#include <stdio.h>
-
-int main ()
-{
-    char    s1[] = "hel";
-    char    s2[] = "lo";
-
-    printf("%s\n", ft_strjoin(s1, s2));
-}*/

@@ -22,12 +22,3 @@ void	*ft_memset(void *b, int c, unsigned int len)
 	}
 	return (b);
 }
-/*
-#include <stdio.h>
-int main ()
-{
-    char    str[] = "ABCDE";
-    printf("Before: %s", str);
-    printf("After: %s", ft_memset(str, 'C', 3));
-}
-*/

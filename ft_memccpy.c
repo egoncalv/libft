@@ -26,16 +26,3 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main ()
-{
-    char    src[] = "";
-    char    dst[32] = "";
-    
-    ft_memccpy(dst, src, 102, 10);
-    printf("%s\n", dst);
-}
-*/

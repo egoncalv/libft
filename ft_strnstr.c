@@ -35,14 +35,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main ()
-{
-    const char    haystack[] = "Foo Bar Baz";
-    const char    needle[] = "Bar";
-
-    printf("%s\n", ft_strnstr(haystack, needle, 10));
-    printf("%s\n", strnstr(haystack, needle, 10));
-}*/

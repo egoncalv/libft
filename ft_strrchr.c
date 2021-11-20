@@ -31,11 +31,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
-int main ()
-{
-    char    str[] = "abceade";
-    int     c = 'a';
-    printf("%s\n", ft_strrchr(str, c));
-}
-*/

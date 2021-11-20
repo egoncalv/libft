@@ -43,14 +43,3 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-/*
-#include <stdio.h>
-#include <stdlib.h>
-
-int main ()
-{
-    char str[] = "-123asd";
-    printf("atoi: %d\n", atoi(str));
-    printf("ft_atoi: %d\n", ft_atoi(str));
-    return (0);
-}*/

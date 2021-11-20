@@ -53,13 +53,3 @@ char	*ft_itoa(int n)
 	}
 	return (res);
 }
-/*
-int	main(void)
-{
-	int	n;
-
-	n = -2147483648;
-	printf("%s\n", ft_itoa(n));
-	return (0);
-}
-*/

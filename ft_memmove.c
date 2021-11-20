@@ -24,15 +24,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main ()
-{
-    char    str[] = "abcde";
-    char    dst[10] = "jhieda";
-
-    printf("%s\n", ft_memmove(dst, str, 4));
-}
-*/

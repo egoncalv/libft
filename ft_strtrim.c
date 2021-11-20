@@ -40,12 +40,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		ptr[i++] = s1[start++];
 	return (ptr);
 }
-/*
-int main ()
-{
-	char	str[] = "abcdtesteabcd";
-	char	set[] = "abcd";
-
-	printf("%s", ft_strtrim(str, set));
-
-}*/

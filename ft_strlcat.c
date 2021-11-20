@@ -30,13 +30,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[i] = 0;
 	return (i);
 }
-/*
-#include <stdio.h>
-int main ()
-{
-    char    str[] = "tenate";
-    char    dst[] = "conca";
-    
-    printf("%zu \n", ft_strlcat(dst, str, 11));
-    printf("%s \n", dst);
-}*/

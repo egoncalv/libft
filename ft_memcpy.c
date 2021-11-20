@@ -25,13 +25,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-
-int main ()
-{
-    char    str[] = "abcdefg";
-    char    dst[10] = "";
-    printf("%s\n", ft_memcpy(dst, str, 5));
-}*/

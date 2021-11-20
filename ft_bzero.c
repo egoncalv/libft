@@ -10,10 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* 
-bzero writes n zeroes bytes to the string s. If n is zero, it does nothing
-*/
-
 #include <libft.h>
 
 void	ft_bzero(void *s, int n)
@@ -27,13 +23,3 @@ void	ft_bzero(void *s, int n)
 		n--;
 	}
 }
-/*
-#include <stdio.h>
-int main()
-{
-    char    str[] = "ABCDE";
-    printf("Before: %s", str);
-    ft_bzero(str + 3, 3);
-    printf("After: %s", str);
-}
-*/

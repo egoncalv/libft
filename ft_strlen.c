@@ -21,11 +21,3 @@ size_t
 		i++;
 	return (i);
 }
-/*
-#include <stdio.h>
-int main ()
-{
-    char    str[] = "a";
-    printf("size of str: %zu", ft_strlen(str));
-}
-*/
