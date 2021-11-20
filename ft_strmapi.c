@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 01:21:41 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 11:49:09 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 18:16:36 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i++;
 	}
 	res[i] = '\0';
-	return (str);
+	return (res);
 }
