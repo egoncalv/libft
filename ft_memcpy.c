@@ -6,15 +6,15 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:29:59 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 11:47:50 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 12:03:32 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	if (!dst)
 		return (0);

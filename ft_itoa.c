@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 17:01:58 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 11:47:31 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:52:55 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
 int	ft_digits_cntr(int n)
 {
@@ -30,6 +30,7 @@ char	*ft_itoa(int n)
 	char	*res;
 	int		i;
 
+	i = 0;
 	res = malloc(sizeof(char) * ft_digits_cntr(n));
 	if (n == -2147483648)
 		return ("-2147483648");
