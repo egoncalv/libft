@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:39:08 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/10/23 02:39:51 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/08 17:10:22 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,10 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
 #include <stdio.h>
 int main ()
 {
     char    str[] = "abceade";
     int     c = 'a';
     printf("%s\n", ft_strrchr(str, c));
-}*/
+}

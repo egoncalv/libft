@@ -8,12 +8,13 @@
 /*   Created: 2021/10/28 15:22:31 by egoncalv          #+#    #+#             */
 /*   Updated: 2021/11/05 17:39:18 by egoncalv         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/* *************************************************************./************* */
 
 //#include <stdlib.h>
 //#include <stdio.h>
 #include <libft.h>
 
+/*
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	int	i;
@@ -28,6 +29,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+*/
 
 int	ft_wordcntr(const char *str, char c)
 {
