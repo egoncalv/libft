@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 01:32:42 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 01:37:17 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:48:47 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

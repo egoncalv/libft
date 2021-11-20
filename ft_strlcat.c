@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:36:10 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/10/23 02:36:54 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:48:56 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

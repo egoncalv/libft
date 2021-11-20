@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 17:01:58 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 01:01:39 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:47:31 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 int	ft_digits_cntr(int n)
 {

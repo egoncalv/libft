@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 15:22:31 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 10:53:17 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:48:26 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 int	ft_wordcntr(const char *str, char c)
 {

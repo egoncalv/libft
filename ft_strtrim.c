@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:54:18 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 10:54:51 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:49:27 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

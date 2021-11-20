@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 01:42:36 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 01:45:07 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:48:08 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

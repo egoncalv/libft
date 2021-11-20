@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:52:22 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/10/28 15:03:45 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:48:51 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 int	ft_strlen(const char *s)
 {

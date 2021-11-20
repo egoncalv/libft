@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:40:43 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/10/23 02:41:20 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:47:40 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

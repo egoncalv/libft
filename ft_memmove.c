@@ -6,11 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:34:39 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/10/23 02:34:53 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:47:59 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

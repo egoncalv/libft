@@ -6,10 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 21:21:16 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 11:24:57 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:46:45 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+//#include "libft.h"
 
 int	ft_isspace(int c)
 {
