@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 17:01:58 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 11:52:55 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/21 23:35:51 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@ int	ft_digits_cntr(int n)
 		cntr++;
 	}
 	return (cntr);
+}
+
+int	ft_set_index(int i, int n)
+{
+	if (i == 1)
+		return (ft_digits_cntr(n));
+	else
+		return (ft_digits_cntr(n) - 1);
 }
 
 char	*ft_itoa(int n)
@@ -42,10 +50,7 @@ char	*ft_itoa(int n)
 	}
 	if (n >= 0 && n < 10)
 		res[i] = n + '0';
-	if (i == 1)
-		i = ft_digits_cntr(n);
-	else
-		i = ft_digits_cntr(n) - 1;
+	i = ft_set_index(i, n);
 	while (n > 0)
 	{
 		res[i] = (n % 10) + '0';
