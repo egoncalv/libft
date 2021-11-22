@@ -6,7 +6,7 @@
 #    By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/20 11:45:23 by egoncalv          #+#    #+#              #
-#    Updated: 2021/11/20 18:09:53 by egoncalv         ###   ########.fr        #
+#    Updated: 2021/11/22 00:10:08 by egoncalv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,6 @@ SRC = ft_atoi.c \
 	  ft_isdigit.c \
 	  ft_isprint.c \
 	  ft_itoa.c \
-	  ft_memccpy.c \
 	  ft_memchr.c \
 	  ft_memcmp.c \
 	  ft_memcpy.c \
