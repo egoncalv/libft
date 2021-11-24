@@ -6,21 +6,11 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:52:22 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 18:15:46 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/11/24 15:08:40 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != 0)
-		i++;
-	return (i);
-}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
