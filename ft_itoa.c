@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 17:01:58 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/21 23:35:51 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/01 17:20:28 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,20 @@ int	ft_set_index(int i, int n)
 		return (ft_digits_cntr(n) - 1);
 }
 
+char	*ft_strcpy(char *dst, char *src)
+{
+	size_t	i;
+
+	i = 0;
+	while (src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = 0;
+	return (dst);
+}
+
 char	*ft_itoa(int n)
 {
 	char	*res;
@@ -41,7 +55,7 @@ char	*ft_itoa(int n)
 	i = 0;
 	res = malloc(sizeof(char) * ft_digits_cntr(n));
 	if (n == -2147483648)
-		return ("-2147483648");
+		return (ft_strcpy(res, "-2147483648"));
 	if (n < 0)
 	{
 		res[0] = '-';
@@ -51,6 +65,7 @@ char	*ft_itoa(int n)
 	if (n >= 0 && n < 10)
 		res[i] = n + '0';
 	i = ft_set_index(i, n);
+	res[i] = '\0';
 	while (n > 0)
 	{
 		res[i] = (n % 10) + '0';
