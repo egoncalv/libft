@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 02:42:32 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 11:49:18 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/03 01:32:53 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		if (needle[j] == 0)
 			return ((char *)haystack + i);
 		i++;
-		len--;
 	}
 	return (0);
 }
