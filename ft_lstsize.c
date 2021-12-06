@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 14:36:33 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/12/06 14:46:23 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/06 14:53:10 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	i;
+	unsigned int	i;
 
-	i = 1;
-	while (lst++->next != NULL)
+	i = 0;
+	while (lst)
+	{
+		lst = lst->next;
 		i++;
+	}
 	return (i);
 }
