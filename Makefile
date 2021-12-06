@@ -6,7 +6,7 @@
 #    By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/20 11:45:23 by egoncalv          #+#    #+#              #
-#    Updated: 2021/12/06 14:47:26 by egoncalv         ###   ########.fr        #
+#    Updated: 2021/12/06 14:58:09 by egoncalv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,6 +52,12 @@ SRC = ft_atoi.c \
 BONUS = ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
 
 
 OBJ = $(SRC:.c=.o)
