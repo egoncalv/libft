@@ -6,7 +6,7 @@
 #    By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/20 11:45:23 by egoncalv          #+#    #+#              #
-#    Updated: 2021/12/06 14:58:09 by egoncalv         ###   ########.fr        #
+#    Updated: 2021/12/06 18:07:45 by egoncalv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,7 +82,7 @@ bonus: $(OBJ) $(BONUS_OBJ)
 	@echo "$(NAME) was indexed"
 
 clean:
-	@rm -f $(OBJ)
+	@rm -f $(OBJ) $(BONUS_OBJ)
 	@echo "OBJS removed"
 
 fclean:	clean
