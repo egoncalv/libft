@@ -6,7 +6,7 @@
 #    By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/20 11:45:23 by egoncalv          #+#    #+#              #
-#    Updated: 2021/11/22 00:10:08 by egoncalv         ###   ########.fr        #
+#    Updated: 2021/12/04 13:20:07 by egoncalv         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ SRC = ft_atoi.c \
 	  ft_split.c \
 	  ft_strchr.c \
 	  ft_strdup.c \
+	  ft_substr.c \
 	  ft_striteri.c \
 	  ft_strjoin.c \
 	  ft_strlcat.c \
@@ -48,27 +49,39 @@ SRC = ft_atoi.c \
 	  ft_tolower.c \
 	  ft_toupper.c \
 
+BONUS = ft_lstnew.c \
+		ft_lstadd_front.c \
+
+
 OBJ = $(SRC:.c=.o)
 
-all: $(NAME)
+BONUS_OBJ = $(BONUS:.c=.o)
+
+all:	$(NAME)
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
-	@echo "$(NAME) created"
+	@echo "$(NAME) was created"
 	@ranlib $(NAME)
-	@echo "$(NAME) indexed"
+	@echo "$(NAME) was indexed"
 
 %.o: %.c
 	@gcc $(FLAG) -c $< -o $@
 
+bonus: $(OBJ) $(BONUS_OBJ)
+	@ar rc $(NAME) $(OBJ) $(BONUS_OBJ)
+	@echo "$(NAME) was created with bonuses"
+	@ranlib $(NAME)
+	@echo "$(NAME) was indexed"
+
 clean:
 	@rm -f $(OBJ)
-	@echo "OBJ deleted"
+	@echo "OBJS removed"
 
-fclean: clean
+fclean:	clean
 	@rm -f $(NAME)
-	@echo "$(NAME) deleted"
+	@echo "$(NAME) removed"
 
-re: fclean all
+re:	fclean $(NAME)
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re bonus 

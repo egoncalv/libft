@@ -6,13 +6,13 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 15:22:31 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/11/20 11:48:26 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/03 20:30:22 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_wordcntr(const char *str, char c)
+static int	ft_wordcntr(const char *str, char c)
 {
 	int	i;
 	int	cntr;
@@ -31,7 +31,7 @@ int	ft_wordcntr(const char *str, char c)
 	return (cntr);
 }
 
-char	*ft_strndup(const char *str, int n)
+static char	*ft_strndup(const char *str, int n)
 {
 	char	*ptr;
 
