@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 17:47:53 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/12/04 13:20:25 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/06 14:47:00 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,6 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
 
 #endif
