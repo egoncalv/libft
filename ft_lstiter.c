@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 18:54:50 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/12/07 19:02:13 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/07 19:22:08 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	{
 		tmp = lst->next;
 		f(lst->content);
-		lst = temp;
+		lst = tmp;
 	}
 }
