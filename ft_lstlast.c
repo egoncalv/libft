@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 14:53:34 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/12/06 14:55:03 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/10 18:35:05 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	while (lst)
+	if (!lst)
+		return (0);
+	while (lst->next)
 		lst = lst->next;
 	return (lst);
 }
