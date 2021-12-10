@@ -6,7 +6,7 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 19:02:25 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/12/07 19:25:36 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/10 18:08:32 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		lst = tmp;
 	}
 	if (!new)
-		return 0;
+		return (0);
 	return (*new);
 }
