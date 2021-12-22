@@ -6,71 +6,53 @@
 /*   By: egoncalv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 17:01:58 by egoncalv          #+#    #+#             */
-/*   Updated: 2021/12/01 17:20:28 by egoncalv         ###   ########.fr       */
+/*   Updated: 2021/12/22 13:42:33 by egoncalv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_digits_cntr(int n)
+static int	count_nbr(int n)
 {
-	int	cntr;
+	int		count;
+	long	res;
 
-	cntr = 0;
-	while (n != 0)
+	res = n;
+	count = 1;
+	if (res < 0)
 	{
-		n /= 10;
-		cntr++;
+		count++;
+		res *= (-1);
 	}
-	return (cntr);
-}
-
-int	ft_set_index(int i, int n)
-{
-	if (i == 1)
-		return (ft_digits_cntr(n));
-	else
-		return (ft_digits_cntr(n) - 1);
-}
-
-char	*ft_strcpy(char *dst, char *src)
-{
-	size_t	i;
-
-	i = 0;
-	while (src[i])
+	while (res >= 10)
 	{
-		dst[i] = src[i];
-		i++;
+		count++;
+		res /= 10;
 	}
-	dst[i] = 0;
-	return (dst);
+	return (count);
 }
 
 char	*ft_itoa(int n)
 {
-	char	*res;
+	char	*str;
+	long	res;
 	int		i;
 
 	i = 0;
-	res = malloc(sizeof(char) * ft_digits_cntr(n));
-	if (n == -2147483648)
-		return (ft_strcpy(res, "-2147483648"));
+	str = (char *)malloc(sizeof(char) * count_nbr(n) + 1);
+	if (!str)
+		return (NULL);
 	if (n < 0)
+		str[0] = '-';
+	res = n;
+	if (res < 0)
+		res *= (-1);
+	str[count_nbr(n) - i++] = '\0';
+	while (res >= 10)
 	{
-		res[0] = '-';
-		i = 1;
-		n *= -1;
+		str[count_nbr(n) - i++] = (res % 10) + '0';
+		res /= 10;
 	}
-	if (n >= 0 && n < 10)
-		res[i] = n + '0';
-	i = ft_set_index(i, n);
-	res[i] = '\0';
-	while (n > 0)
-	{
-		res[i] = (n % 10) + '0';
-		n /= 10;
-		i--;
-	}
-	return (res);
+	str[count_nbr(n) - i++] = (res % 10) + '0';
+	return (str);
 }
