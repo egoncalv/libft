@@ -118,3 +118,47 @@ size_t len)`
 * **ft_putnbr_fd** `void ft_putnbr_fd(int n, int fd)`
 > Outputs the integer ’n’ to the given file descriptor.
 ---
+* **BONUS PART**
+---
+* **ft_lstnew** `t_list *ft_lstnew(void *content)`
+> Allocates and returns a new
+element.  The variable ’content’ is initialized
+with the value of the parameter ’content’.  The
+variable ’next’ is initialized to NULL.
+---
+* **ft_lstadd_front** `void ft_lstadd_front(t_list **lst, t_list *new)`
+> Adds the element ’new’ at the beginning of the
+list.
+---
+* **ft_lstsize** `int ft_lstsize(t_list *lst)`
+> Counts the number of elements in a list.
+---
+* **ft_lstlast** `t_list *ft_lstlast(t_list *lst)`
+> Returns the last element of the list.
+---
+* **ft_lstadd_back** `void ft_lstadd_back(t_list **lst, t_list *new)`
+> Adds the element ’new’ at the end of the list.
+---
+* **ft_lstdelone** `void ft_lstdelone(t_list *lst, void (*del)(void *))`
+> Takes as a parameter an element and frees the
+memory of the element’s content using the function
+’del’ given as a parameter and free the element.
+The memory of ’next’ must not be freed.
+---
+* **ft_lstclear** `void ft_lstclear(t_list **lst, void (*del)(void *))`
+> Takes as a parameter an element and frees the
+memory of the element’s content using the function
+’del’ given as a parameter and free the element.
+The memory of ’next’ must not be freed.
+---
+* **ft_lstiter** `void ft_lstiter(t_list *lst, void (*f)(void *))`
+> Iterates the list ’lst’ and applies the function
+’f’ to the content of each element.
+---
+* **ft_lstmap** `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`
+> Iterates the list ’lst’ and applies the function
+’f’ to the content of each element.  Creates a new
+list resulting of the successive applications of
+the function ’f’.  The ’del’ function is used to
+delete the content of an element if needed.
+---
