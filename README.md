@@ -118,7 +118,12 @@ size_t len)`
 * **ft_putnbr_fd** `void ft_putnbr_fd(int n, int fd)`
 > Outputs the integer ’n’ to the given file descriptor.
 ---
-* **BONUS PART**
+                                                          **BONUS PART (Linked Lists)
+`typedef struct s_list 
+{
+  void *content;
+  struct s_list *next; 
+ }  t_list;`
 ---
 * **ft_lstnew** `t_list *ft_lstnew(void *content)`
 > Allocates and returns a new
