@@ -1,4 +1,6 @@
 # libft
+<img width="203" alt="image" src="https://user-images.githubusercontent.com/37090738/159490079-660085de-3501-4856-8020-57b8a3f6de17.png">
+
 This is my first own library in C, and also the first project at the 42 School. It contains important functions that will be used throughout the cursus.
 
 The functions contained in this library are:
